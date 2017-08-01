@@ -14,8 +14,9 @@ app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type, Authorization');
   next();
 });
+// changes color according to response status for developers
+app.use(morgan('dev'));
 
-app.use(morgan(dev));
 app.use(express.static(__dirname + '/app'));
 
 // sends our app to index.html in our director.
