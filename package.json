@@ -14,5 +14,11 @@
     "express": "^4.15.3",
     "morgan": "^1.8.2",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
   }
 }
