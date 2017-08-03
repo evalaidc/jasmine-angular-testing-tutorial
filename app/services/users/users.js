@@ -38,11 +38,27 @@
       }
     ];
 
+      var singleUser = {
+      id: '2',
+      name: 'Bob',
+      role: 'Developer',
+      location: 'New York',
+      twitter: 'billybob'
+    };
+
     // Defining all to make our test pass. It doesn't need to do anything yet.
       Users.all = function() {
         return userList;
 
       };
+
+
+      Users.findById = function(id) {
+        // Returning a single user object as our test expects it to
+         return userList.find(function(user) {
+           return user.id === id;
+         });
+    };
 
     return Users;
   });
